@@ -1,0 +1,143 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+$color-primary: #76BB21;
+
+@font-face {
+    font-family: 'markpro';
+    src: url('./public/fonts/Mark-Pro.ttf');
+}
+
+@font-face {
+    font-family: 'markpro-black';
+    src: url('./public/fonts/MarkPro-Black.otf');
+}
+
+@font-face {
+    font-family: 'markpro-bold';
+    src: url('./public/fonts/Mark-Pro-Bold.otf');
+}
+
+@font-face {
+    font-family: 'markpro-medium';
+    src: url('./public/fonts/Mark-Pro-Mediun.otf');
+}
+@font-face {
+    font-family: 'FontsFree-Net-AlbraMedium';
+    src: url('./public/fonts/FontsFree-Net-AlbraMedium.ttf');
+}
+
+@font-face {
+    font-family: 'FontsFree-Net-AlbraBold';
+    src: url('./public/fonts/FontsFree-Net-AlbraBold.ttf');
+}
+
+.mkp-black{
+    font-family: 'markpro-black', sans-serif;
+}
+
+.mkp-bold{
+    font-family: 'markpro-bold', sans-serif;
+    font-weight: 900;
+}
+
+.mkp-medium{
+    font-family: 'markpro-medium', sans-serif;
+    font-weight: 900;
+}
+
+.FontsFree-Net-AlbraMedium{
+    font-family: 'FontsFree-Net-AlbraMedium', sans-serif;
+    font-weight: 900;
+}
+
+.FontsFree-Net-AlbraBold{
+    font-family: 'FontsFree-Net-AlbraBold', sans-serif;
+    font-weight: 900;
+}
+
+body{
+
+    color-scheme: light dark;
+    color: #1d252d;
+
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'markpro', sans-serif;
+}
+
+.nav-container{
+    li{
+        padding: 20px 0;
+    }
+    a{
+        font-family: 'markpro-bold';
+        font-weight: 900;
+        border-right: 1px solid $color-primary;
+        padding: 10px 0;
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
+
+.title-section{
+    h2{
+        font-size: 1.3rem;
+        letter-spacing: .6px;
+        font-weight: 900;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        color: $color-primary;
+        &.mb-0{
+            margin-bottom: 0;
+        }
+    }
+    p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin-bottom: 0;
+        line-height: 1.4;
+    }
+}
+.main-color{
+    color: $color-primary;
+}
+
+.line-underline-center
+{
+    display: flex;
+    padding: 0 20px;
+    padding-bottom: 1px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #0B263B;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-container{
+        li{
+            padding: 0px 0;
+        }
+        a{
+            font-family: 'markpro-bold';
+            font-weight: 900;
+            border-bottom: 1px solid $color-primary;
+            border-right: none;
+            padding: 20px 0;
+        
+        }
+    }
+}
